@@ -1,0 +1,116 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffdee9, #b5fffc);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ff4081;
+  animation: fadeIn 2s ease-in-out;
+}
+
+p {
+  font-size: 1.2em;
+  color: #444;
+  margin-bottom: 30px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.question {
+  margin-top: 30px;
+  animation: fadeIn 1s ease-in-out;
+  max-width: 90%;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e91e63;
+}
+
+textarea {
+  width: 80%;
+  max-width: 500px;
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1em;
+  margin: 20px auto;
+  resize: none;
+  display: block;
+}
+
+#secret-message button {
+  background-color: #673ab7;
+  padding: 14px 28px;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background 0.3s ease;
+}
+
+#secret-message button:hover {
+  background-color: #5e35b1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+/* Responsive untuk HP */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+
+  textarea {
+    width: 90%;
+    height: 90px;
+    font-size: 0.95em;
+  }
+
+  .question {
+    padding: 0 10px;
+  }
+}
